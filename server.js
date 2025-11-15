@@ -28,6 +28,7 @@ app.use(cors({
 
 
 
+
 // Body parser middleware for JSON data
 app.use(express.json()); 
 

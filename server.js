@@ -20,7 +20,7 @@ const PORT = process.env.PORT || 5000;
 app.use(cors({
     origin: [
         "http://localhost:3000",
-        "https://vercel-client-weld.vercel.app",
+        "https://vercel-client-weld.vercel.app/",
         "https://your-custom-domain.com"
     ],
     methods: ["GET", "POST", "PUT", "DELETE"],

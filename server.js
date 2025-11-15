@@ -17,7 +17,16 @@ const PORT = process.env.PORT || 5000;
 
 // --- Middlewares ---
 // Enable CORS for frontend communication
-app.use(cors({ origin: 'http://localhost:3000' })); 
+app.use(cors({
+    origin: [
+        "http://localhost:3000",
+        "https://vercel-client-weld.vercel.app",
+        "https://your-custom-domain.com"
+    ],
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true
+}));
+
 // Body parser middleware for JSON data
 app.use(express.json()); 
 

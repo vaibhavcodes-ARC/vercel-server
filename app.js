@@ -15,7 +15,7 @@ const PORT = process.env.PORT || 5000;
 
 // --- Middlewares ---
 // Allow requests from the client dev server (Vite) or a configured CLIENT_URL
-const clientUrl = process.env.CLIENT_URL || 'http://localhost:5173';
+const clientUrl = process.env.CLIENT_URL || 'https://vercel-server-0zyy.onrender.com';
 app.use(cors({ origin: clientUrl }));
 app.use(express.json());
 
